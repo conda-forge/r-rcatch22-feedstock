@@ -1,4 +1,4 @@
-{% set version = '0.2.1' %}
+{% set version = "0.2.3" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Rcatch22_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Rcatch22/Rcatch22_{{ version }}.tar.gz
-  sha256: b4e173ba89da2339a949a649f9b3358f0cf95c744ea9d386a9883a846c57f9bd
+  sha256: 94fb50f76f75c8df992b47f74016efedc14effde5769018de0a6b0a453ab48d2
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -52,9 +52,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=Rcatch22
   license: GPL-3.0-only
-  summary: Calculate 22 summary statistics coded in C on time-series vectors to enable pattern
-    detection, classification, and regression applications in the feature space as proposed
-    by Lubba et al. (2019) <doi:10.1007/s10618-019-00647-x>.
+  summary: Calculate 22 summary statistics coded in C on time-series vectors to enable pattern detection, classification, and regression applications in the feature space as proposed by Lubba et al. (2019) <doi:10.1007/s10618-019-00647-x>.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
