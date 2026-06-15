@@ -1,4 +1,4 @@
-{% set version = "0.2.3" %}
+{% set version = "0.2.5" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Rcatch22_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Rcatch22/Rcatch22_{{ version }}.tar.gz
-  sha256: 94fb50f76f75c8df992b47f74016efedc14effde5769018de0a6b0a453ab48d2
+  sha256: 37f7be24e8938d8c33b83571527317d324c2a93a32ca62da7167e62dbabd7aec
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
